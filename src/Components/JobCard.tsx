@@ -9,7 +9,7 @@ const JobCard = ({ job }: { job: Job }) => (
         <h3>{job.title}</h3>
         <p className="company">{job.company_name}</p>
         <div className="meta">
-          <span><FaUserTie /> {job.experience} yrs</span>
+          <span><FaUserTie /> {job.experience} </span>
           <span><FaMapMarkerAlt /> {job.location}</span>
         </div>
       </div>
