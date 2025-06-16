@@ -22,7 +22,7 @@
   margin: 4px 0;
   border: 1px solid #ccc;
   border-radius: 6px;
-  /* background-color: ; */
+  background-color: rgba(0, 123, 255, 0.1);
   color: #333;
   font-size: 14px;
 }
