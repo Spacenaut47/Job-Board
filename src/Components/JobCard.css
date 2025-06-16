@@ -15,11 +15,6 @@
   display: flex;
   justify-content: space-between;
 }
-/* .company { 
-  text-align: center;
-  margin: 4px 0; color: #555; 
-} */
-
 .company {
   display: inline-block;
   /* font-weight: bold; */
