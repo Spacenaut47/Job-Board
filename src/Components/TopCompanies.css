@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+.top-companies-wrapper {
+  text-align: center;
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.top-companies-wrapper h2 {
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: 28px;
+  color: #2563eb;
+}
+
+.top-companies-wrapper h2:hover {
+  color: #2563eb;
+  transform: scale(1.1);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: var(--text-color);
+}
+
+.companies-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.companies-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.company-card {
+  flex: 0 0 auto;
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.company-logo {
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.company-name {
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.company-rating {
+  margin-bottom: 8px;
+}
+
+.view-jobs {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-top: 2px;
+}

@@ -1,0 +1,124 @@
+/* :root {
+  --bg-light: #ffffff;
+  --bg-dark: #1e1e1e;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --card-bg-light: #f9f9f9;
+  --card-bg-dark: #2e2e2e;
+}
+
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.light .job-card {
+  background-color: var(--card-bg-light);
+  color: var(--text-light);
+}
+
+body.dark .job-card {
+  background-color: var(--card-bg-dark);
+  color: var(--text-dark);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+body.light .job-card, .company-card {
+  background-color: var(--card-bg-light);
+  color: var(--text-light);
+}
+body.dark .job-card, .company-card {
+  background-color: var(--card-bg-dark);
+  color: var(--text-dark);
+}
+body.light .top-bar {
+  background: #fff;
+}
+body.dark .top-bar {
+  background: #2e2e2e;
+}
+body.light .pagination button {
+  background: #4f46e5;
+  color: white;
+}
+body.dark .pagination button {
+  background: #6b5cd1;
+  color: white;
+} */
+
+:root {
+  --bg-light: #f9fafb;
+  --text-light: #1f2937;
+  --card-bg-light: #ffffff;
+  --topbar-bg: #ffffff;
+  --bg-dark: #1f2937;
+  --text-dark: #f9fafb;
+  --card-bg-dark: #374151;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.light .job-card,
+body.light .company-card {
+  background-color: var(--card-bg-light);
+  color: var(--text-light);
+}
+
+body.dark .job-card,
+body.dark .company-card {
+  background-color: var(--card-bg-dark);
+  color: var(--text-dark);
+}
+
+body.light .top-bar {
+  background: var(--topbar-bg);
+}
+
+body.dark .top-bar {
+  background: #2e2e2e;
+}
+
+body.dark .top-bar .search-bar {
+  color: var(--text-dark);
+}
+
+body.light .pagination button:disabled {
+  background: #ccc;
+  color: white;
+}
+
+body.dark .pagination button:disabled {
+  background: #ccc;
+  color: white;
+}

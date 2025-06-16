@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: "Poppins", sans-serif;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.company { margin: 4px 0; color: #555; }
+.meta span { margin-right: 12px; color: #777; font-size: 14px; }
+.posted { color: #999; font-size: 14px; }
+.skills, .employment { color: #333; font-size: 15px; }

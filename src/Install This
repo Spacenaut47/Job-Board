@@ -1,0 +1,7 @@
+npm create vite@latest jobBoard -- --template react-ts
+cd jobBoard
+npm install
+npm install axios
+npm install --save-dev @types/axios
+npm install react-icons
+npm run dev
