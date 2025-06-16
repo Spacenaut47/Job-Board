@@ -65,13 +65,18 @@ body.dark .pagination button {
 } */
 
 :root {
-  --bg-light: #f9fafb;
+  /* --bg-light: #f9fafb; */
+  /* --bg-light: linear-gradient(to bottom right, #ffffff, #cfd8ea, #9aaed4); */
+   --bg-light: linear-gradient(to bottom, #9aaed4 15%, #cfd8ea 25%, #ffffff 100%);
   --text-light: #1f2937;
   --card-bg-light: #ffffff;
-  --topbar-bg: #ffffff;
-  --bg-dark: #1f2937;
+  --topbar-bg: #fef7f7;
+  /* --bg-dark: #1f2937; */
+  /* --bg-dark: #464646; */
   --text-dark: #f9fafb;
-  --card-bg-dark: #374151;
+  /* --card-bg-dark: #374151; */
+   --bg-dark: linear-gradient(to bottom, #2d2d2d 25%, #2a2a2a 45%, #686868 70%);
+  --card-bg-dark: #686868;
 }
 
 body {
@@ -80,12 +85,14 @@ body {
 }
 
 body.light {
-  background-color: var(--bg-light);
+  /* background-color: var(--bg-light); */
+  background: var(--bg-light);
   color: var(--text-light);
 }
 
 body.dark {
-  background-color: var(--bg-dark);
+  /* background-color: var(--bg-dark); */
+  background: var(--bg-dark);
   color: var(--text-dark);
 }
 
@@ -106,7 +113,7 @@ body.light .top-bar {
 }
 
 body.dark .top-bar {
-  background: #2e2e2e;
+  background: #434242;
 }
 
 body.dark .top-bar .search-bar {
@@ -121,4 +128,15 @@ body.light .pagination button:disabled {
 body.dark .pagination button:disabled {
   background: #ccc;
   color: white;
+}
+
+body.dark .job-card .skills{
+  color: #f0ecec;
+}
+body.dark .job-card .employment{
+  color: #f0ecec;
+}
+
+body.dark .top-companies-wrapper .subtext{
+  color: #f0ecec;
 }
