@@ -1,555 +1,751 @@
 [
   {
     "id": 1,
-    "title": "Frontend Developer",
+    "title": "Frontend Engineer",
     "company_name": "TechCorp",
-    "employment_type": "Full-time",
-    "languages": ["JavaScript", "React"],
-    "posted": "2 days ago",
-    "location": "Remote",
-    "experience": "2+ years",
-    "rating": 4.5
+    "employment_type": "Contract",
+    "languages": [
+      "Next.js",
+      "HTML"
+    ],
+    "posted": "6 days ago",
+    "location": "Hyderabad",
+    "experience": "4+ years",
+    "rating": 4.2
   },
   {
     "id": 2,
-    "title": "Backend Developer",
-    "company_name": "SoftServe",
+    "title": "React Developer",
+    "company_name": "InnovateTech",
     "employment_type": "Part-time",
-    "languages": ["Node.js", "Express"],
-    "posted": "3 days ago",
-    "location": "New York, USA",
-    "experience": "3+ years",
+    "languages": [
+      "Redux",
+      "CSS",
+      "Next.js"
+    ],
+    "posted": "6 days ago",
+    "location": "Indore",
+    "experience": "1+ years",
     "rating": 4.2
   },
   {
     "id": 3,
-    "title": "Full Stack Engineer",
-    "company_name": "DevSolutions",
+    "title": "Frontend Developer",
+    "company_name": "AppMinds",
+    "employment_type": "Contract",
+    "languages": [
+      "Redux",
+      "Tailwind CSS",
+      "CSS",
+      "TypeScript"
+    ],
+    "posted": "12 days ago",
+    "location": "Gurugram",
+    "experience": "1+ years",
+    "rating": 4.6
+  },
+  {
+    "id": 4,
+    "title": "React Engineer",
+    "company_name": "SoftServe",
     "employment_type": "Full-time",
-    "languages": ["Python", "Django", "React"],
-    "posted": "1 week ago",
-    "location": "Berlin, Germany",
+    "languages": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS"
+    ],
+    "posted": "2 days ago",
+    "location": "Bhubaneshwar",
     "experience": "4+ years",
     "rating": 4.7
   },
   {
-    "id": 4,
-    "title": "Mobile Developer",
-    "company_name": "Appify",
-    "employment_type": "Contract",
-    "languages": ["Flutter", "Dart"],
-    "posted": "2024-06-04",
-    "location": "Toronto, Canada",
-    "experience": "2+ years",
-    "rating": 4.3
-  },
-  {
     "id": 5,
-    "title": "UI/UX Designer",
-    "company_name": "DesignPro",
+    "title": "Frontend Developer",
+    "company_name": "InnovateTech",
     "employment_type": "Full-time",
-    "languages": ["Figma", "Sketch"],
-    "posted": "2024-06-05",
-    "location": "Remote",
-    "experience": "2+ years",
-    "rating": 4.6
+    "languages": [
+      "CSS",
+      "Tailwind CSS"
+    ],
+    "posted": "8 days ago",
+    "location": "Kolkata",
+    "experience": "0-1 years",
+    "rating": 4.0
   },
   {
     "id": 6,
-    "title": "Data Scientist",
-    "company_name": "DataMinds",
-    "employment_type": "Full-time",
-    "languages": ["Python", "TensorFlow"],
-    "posted": "2024-06-06",
-    "location": "London, UK",
-    "experience": "3+ years",
-    "rating": 4.8
+    "title": "Web Developer (React)",
+    "company_name": "TechCorp",
+    "employment_type": "Contract",
+    "languages": [
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "Redux"
+    ],
+    "posted": "1 days ago",
+    "location": "Gurugram",
+    "experience": "1+ years",
+    "rating": 4.6
   },
   {
     "id": 7,
-    "title": "DevOps Engineer",
-    "company_name": "CloudNet",
-    "employment_type": "Full-time",
-    "languages": ["AWS", "Docker", "Kubernetes"],
-    "posted": "2024-06-07",
-    "location": "Sydney, Australia",
+    "title": "React Engineer",
+    "company_name": "CodeCrafters",
+    "employment_type": "Part-time",
+    "languages": [
+      "HTML",
+      "Next.js",
+      "Redux",
+      "JavaScript"
+    ],
+    "posted": "7 days ago",
+    "location": "Bhubaneshwar",
+    "experience": "0-1 years",
+    "rating": 4.1
+  },
+  {
+    "id": 8,
+    "title": "React.js Developer",
+    "company_name": "DevSolutions",
+    "employment_type": "Part-time",
+    "languages": [
+      "Redux",
+      "React"
+    ],
+    "posted": "14 days ago",
+    "location": "Delhi",
+    "experience": "4+ years",
+    "rating": 4.0
+  },
+  {
+    "id": 9,
+    "title": "Frontend Engineer",
+    "company_name": "SoftServe",
+    "employment_type": "Part-time",
+    "languages": [
+      "Redux",
+      "TypeScript"
+    ],
+    "posted": "6 days ago",
+    "location": "Pune",
+    "experience": "3+ years",
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "title": "React Engineer",
+    "company_name": "CodeCrafters",
+    "employment_type": "Contract",
+    "languages": [
+      "HTML",
+      "React",
+      "Redux",
+      "JavaScript"
+    ],
+    "posted": "9 days ago",
+    "location": "Remote",
+    "experience": "4+ years",
+    "rating": 4.3
+  },
+  {
+    "id": 11,
+    "title": "JavaScript Developer",
+    "company_name": "SoftServe",
+    "employment_type": "Part-time",
+    "languages": [
+      "HTML",
+      "React",
+      "TypeScript"
+    ],
+    "posted": "14 days ago",
+    "location": "Kolkata",
+    "experience": "5+ years",
+    "rating": 4.2
+  },
+  {
+    "id": 12,
+    "title": "Frontend Developer",
+    "company_name": "InnovateTech",
+    "employment_type": "Part-time",
+    "languages": [
+      "Tailwind CSS",
+      "HTML"
+    ],
+    "posted": "1 days ago",
+    "location": "Mumbai",
+    "experience": "5+ years",
+    "rating": 4.5
+  },
+  {
+    "id": 13,
+    "title": "JavaScript Developer",
+    "company_name": "TechCorp",
+    "employment_type": "Part-time",
+    "languages": [
+      "JavaScript",
+      "React"
+    ],
+    "posted": "8 days ago",
+    "location": "Pune",
+    "experience": "2+ years",
+    "rating": 4.1
+  },
+  {
+    "id": 14,
+    "title": "React Developer",
+    "company_name": "SoftServe",
+    "employment_type": "Part-time",
+    "languages": [
+      "Tailwind CSS",
+      "React"
+    ],
+    "posted": "3 days ago",
+    "location": "Bengaluru",
     "experience": "3+ years",
     "rating": 4.5
   },
   {
-    "id": 8,
-    "title": "Machine Learning Engineer",
-    "company_name": "AIWorks",
+    "id": 15,
+    "title": "Frontend Engineer",
+    "company_name": "SoftServe",
     "employment_type": "Full-time",
-    "languages": ["Python", "PyTorch"],
-    "posted": "2024-06-08",
-    "location": "San Francisco, USA",
-    "experience": "5+ years",
-    "rating": 4.9
-  },
-  {
-    "id": 9,
-    "title": "Technical Writer",
-    "company_name": "DocuTech",
-    "employment_type": "Part-time",
-    "languages": ["Markdown", "HTML"],
-    "posted": "2024-06-09",
-    "location": "Remote",
+    "languages": [
+      "React",
+      "Tailwind CSS",
+      "JavaScript"
+    ],
+    "posted": "5 days ago",
+    "location": "Chennai",
     "experience": "2+ years",
     "rating": 4.1
   },
   {
-    "id": 10,
-    "title": "System Administrator",
-    "company_name": "InfraSecure",
+    "id": 16,
+    "title": "JavaScript Developer",
+    "company_name": "AppMinds",
     "employment_type": "Full-time",
-    "languages": ["Linux", "Bash", "Docker"],
-    "posted": "2024-06-10",
-    "location": "Dubai, UAE",
-    "experience": "3+ years",
-    "rating": 4.2
-  },
-  {
-    "id": 11,
-    "title": "Game Developer",
-    "company_name": "PlayZone",
-    "employment_type": "Full-time",
-    "languages": ["Unity", "C#", "Unreal"],
-    "posted": "2024-06-11",
-    "location": "Tokyo, Japan",
-    "experience": "4+ years",
-    "rating": 4.6
-  },
-  {
-    "id": 12,
-    "title": "Embedded Systems Engineer",
-    "company_name": "EmbedTech",
-    "employment_type": "Full-time",
-    "languages": ["C", "C++", "RTOS"],
-    "posted": "2024-06-12",
-    "location": "Oslo, Norway",
-    "experience": "5+ years",
-    "rating": 4.8
-  },
-  {
-    "id": 13,
-    "title": "QA Engineer",
-    "company_name": "Testify",
-    "employment_type": "Full-time",
-    "languages": ["Selenium", "Java"],
-    "posted": "2024-06-13",
-    "location": "Madrid, Spain",
-    "experience": "2+ years",
-    "rating": 4.2
-  },
-  {
-    "id": 14,
-    "title": "Product Manager",
-    "company_name": "InnovateX",
-    "employment_type": "Full-time",
-    "languages": ["Agile", "Scrum"],
-    "posted": "2024-06-14",
-    "location": "Paris, France",
+    "languages": [
+      "TypeScript",
+      "React",
+      "JavaScript"
+    ],
+    "posted": "5 days ago",
+    "location": "Gurugram",
     "experience": "5+ years",
     "rating": 4.7
   },
   {
-    "id": 15,
-    "title": "IT Support Engineer",
-    "company_name": "HelpHub",
-    "employment_type": "Contract",
-    "languages": ["Networking", "Linux"],
-    "posted": "2024-06-15",
-    "location": "Mumbai, India",
-    "experience": "1+ year",
-    "rating": 4.0
-  },
-  {
-    "id": 16,
-    "title": "Cloud Architect",
-    "company_name": "CloudNet",
-    "employment_type": "Full-time",
-    "languages": ["AWS", "Terraform"],
-    "posted": "2024-06-16",
-    "location": "Remote",
-    "experience": "6+ years",
-    "rating": 4.9
-  },
-  {
     "id": 17,
-    "title": "Business Analyst",
-    "company_name": "ConsultX",
+    "title": "React Developer",
+    "company_name": "TechCorp",
     "employment_type": "Part-time",
-    "languages": ["Excel", "PowerBI"],
-    "posted": "2024-06-17",
-    "location": "Chicago, USA",
-    "experience": "3+ years",
-    "rating": 4.1
+    "languages": [
+      "HTML",
+      "TypeScript"
+    ],
+    "posted": "12 days ago",
+    "location": "Remote",
+    "experience": "5+ years",
+    "rating": 4.2
   },
   {
     "id": 18,
-    "title": "Cybersecurity Analyst",
-    "company_name": "SecureTech",
-    "employment_type": "Contract",
-    "languages": ["SIEM", "Python"],
-    "posted": "2024-06-18",
-    "location": "Austin, USA",
-    "experience": "4+ years",
-    "rating": 4.4
+    "title": "React.js Developer",
+    "company_name": "DevSolutions",
+    "employment_type": "Full-time",
+    "languages": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "CSS"
+    ],
+    "posted": "12 days ago",
+    "location": "Kolkata",
+    "experience": "2+ years",
+    "rating": 4.5
   },
   {
     "id": 19,
-    "title": "Database Administrator",
-    "company_name": "DataSecure",
+    "title": "Full Stack Developer (React)",
+    "company_name": "TechCorp",
     "employment_type": "Full-time",
-    "languages": ["SQL", "PostgreSQL"],
-    "posted": "2024-06-19",
-    "location": "Frankfurt, Germany",
-    "experience": "3+ years",
+    "languages": [
+      "JavaScript",
+      "Next.js",
+      "Redux"
+    ],
+    "posted": "7 days ago",
+    "location": "Delhi",
+    "experience": "5+ years",
     "rating": 4.3
   },
   {
     "id": 20,
-    "title": "Network Engineer",
-    "company_name": "NetSecure",
-    "employment_type": "Full-time",
-    "languages": ["Cisco", "Firewalls"],
-    "posted": "2024-06-20",
-    "location": "Rome, Italy",
+    "title": "Full Stack Developer (React)",
+    "company_name": "InnovateTech",
+    "employment_type": "Contract",
+    "languages": [
+      "HTML",
+      "TypeScript",
+      "CSS",
+      "Tailwind CSS"
+    ],
+    "posted": "3 days ago",
+    "location": "Remote",
     "experience": "3+ years",
     "rating": 4.3
   },
-
-{
+  {
     "id": 21,
-    "title": "AI Researcher",
-    "company_name": "NeuroLab",
-    "employment_type": "Full-time",
-    "languages": ["Python", "NLP"],
-    "posted": "2024-06-21",
-    "location": "Zurich, Switzerland",
-    "experience": "5+ years",
-    "rating": 4.9
+    "title": "React Engineer",
+    "company_name": "InnovateTech",
+    "employment_type": "Contract",
+    "languages": [
+      "Redux",
+      "Next.js",
+      "HTML"
+    ],
+    "posted": "7 days ago",
+    "location": "Gurugram",
+    "experience": "4+ years",
+    "rating": 4.3
   },
   {
     "id": 22,
-    "title": "Software Tester",
-    "company_name": "BugFree",
-    "employment_type": "Full-time",
-    "languages": ["Java", "Selenium"],
-    "posted": "2024-06-22",
-    "location": "Remote",
-    "experience": "2+ years",
-    "rating": 4.0
-  },
-  {
-    "id": 23,
-    "title": "Blockchain Developer",
-    "company_name": "CryptoBase",
-    "employment_type": "Full-time",
-    "languages": ["Solidity", "Ethereum"],
-    "posted": "2024-06-23",
-    "location": "San Jose, USA",
-    "experience": "3+ years",
+    "title": "Frontend Developer",
+    "company_name": "SoftServe",
+    "employment_type": "Contract",
+    "languages": [
+      "Next.js",
+      "HTML"
+    ],
+    "posted": "10 days ago",
+    "location": "Hyderabad",
+    "experience": "0-1 years",
     "rating": 4.6
   },
   {
-    "id": 24,
-    "title": "Tech Lead",
-    "company_name": "LeadX",
+    "id": 23,
+    "title": "Frontend Developer",
+    "company_name": "DevSolutions",
     "employment_type": "Full-time",
-    "languages": ["JavaScript", "Project Management"],
-    "posted": "2024-06-24",
-    "location": "Stockholm, Sweden",
-    "experience": "6+ years",
-    "rating": 4.8
+    "languages": [
+      "JavaScript",
+      "CSS"
+    ],
+    "posted": "11 days ago",
+    "location": "Gurugram",
+    "experience": "2+ years",
+    "rating": 4.3
+  },
+  {
+    "id": 24,
+    "title": "Web Developer (React)",
+    "company_name": "TechCorp",
+    "employment_type": "Full-time",
+    "languages": [
+      "React",
+      "Tailwind CSS",
+      "Redux"
+    ],
+    "posted": "2 days ago",
+    "location": "Ahmedabad",
+    "experience": "4+ years",
+    "rating": 4.1
   },
   {
     "id": 25,
-    "title": "Computer Vision Engineer",
-    "company_name": "VisionAI",
-    "employment_type": "Full-time",
-    "languages": ["OpenCV", "Python"],
-    "posted": "2024-06-25",
-    "location": "Seoul, South Korea",
-    "experience": "4+ years",
-    "rating": 4.5
+    "title": "Full Stack Developer (React)",
+    "company_name": "SoftServe",
+    "employment_type": "Part-time",
+    "languages": [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "Redux"
+    ],
+    "posted": "1 days ago",
+    "location": "Indore",
+    "experience": "5+ years",
+    "rating": 4.3
   },
   {
     "id": 26,
-    "title": "Technical Support Engineer",
-    "company_name": "Supportly",
-    "employment_type": "Full-time",
-    "languages": ["Windows", "Linux"],
-    "posted": "2024-06-26",
-    "location": "Remote",
+    "title": "React Developer",
+    "company_name": "AppMinds",
+    "employment_type": "Part-time",
+    "languages": [
+      "CSS",
+      "JavaScript"
+    ],
+    "posted": "9 days ago",
+    "location": "Noida",
     "experience": "2+ years",
-    "rating": 4.0
+    "rating": 4.6
   },
   {
     "id": 27,
-    "title": "ERP Consultant",
-    "company_name": "ERPify",
+    "title": "React Engineer",
+    "company_name": "AppMinds",
     "employment_type": "Contract",
-    "languages": ["SAP", "Oracle"],
-    "posted": "2024-06-27",
-    "location": "Bangkok, Thailand",
+    "languages": [
+      "Tailwind CSS",
+      "CSS",
+      "Redux",
+      "TypeScript"
+    ],
+    "posted": "2 days ago",
+    "location": "Pune",
     "experience": "4+ years",
     "rating": 4.3
   },
   {
     "id": 28,
-    "title": "Digital Marketing Analyst",
-    "company_name": "MarketUp",
+    "title": "React Engineer",
+    "company_name": "AppMinds",
     "employment_type": "Part-time",
-    "languages": ["SEO", "Google Analytics"],
-    "posted": "2024-06-28",
-    "location": "Delhi, India",
-    "experience": "3+ years",
-    "rating": 4.2
+    "languages": [
+      "Tailwind CSS",
+      "HTML"
+    ],
+    "posted": "5 days ago",
+    "location": "Remote",
+    "experience": "4+ years",
+    "rating": 4.6
   },
   {
     "id": 29,
-    "title": "Salesforce Developer",
-    "company_name": "CRMExperts",
+    "title": "Full Stack Developer (React)",
+    "company_name": "TechCorp",
     "employment_type": "Full-time",
-    "languages": ["Apex", "Salesforce"],
-    "posted": "2024-06-29",
-    "location": "Amsterdam, Netherlands",
-    "experience": "3+ years",
-    "rating": 4.4
+    "languages": [
+      "CSS",
+      "TypeScript",
+      "Redux"
+    ],
+    "posted": "7 days ago",
+    "location": "Chennai",
+    "experience": "0-1 years",
+    "rating": 4.6
   },
   {
     "id": 30,
-    "title": "ETL Developer",
-    "company_name": "DataLift",
+    "title": "React Engineer",
+    "company_name": "CodeCrafters",
     "employment_type": "Full-time",
-    "languages": ["Informatica", "SQL"],
-    "posted": "2024-06-30",
-    "location": "Warsaw, Poland",
-    "experience": "3+ years",
-    "rating": 4.3
-  },
-  {
-    "id": 31,
-    "title": "AI Product Manager",
-    "company_name": "AIForce",
-    "employment_type": "Full-time",
-    "languages": ["ML", "Agile"],
-    "posted": "2024-07-01",
-    "location": "Vienna, Austria",
-    "experience": "6+ years",
-    "rating": 4.7
-  },
-  {
-    "id": 32,
-    "title": "React Native Developer",
-    "company_name": "MobileGenius",
-    "employment_type": "Contract",
-    "languages": ["React Native", "JavaScript"],
-    "posted": "2024-07-02",
-    "location": "Remote",
-    "experience": "2+ years",
-    "rating": 4.1
-  },
-  {
-    "id": 33,
-    "title": "Azure DevOps Engineer",
-    "company_name": "CloudTech",
-    "employment_type": "Full-time",
-    "languages": ["Azure", "CI/CD"],
-    "posted": "2024-07-03",
-    "location": "Lisbon, Portugal",
-    "experience": "4+ years",
-    "rating": 4.4
-  },
-  {
-    "id": 34,
-    "title": "Business Intelligence Developer",
-    "company_name": "BIPro",
-    "employment_type": "Full-time",
-    "languages": ["PowerBI", "SQL"],
-    "posted": "2024-07-04",
-    "location": "Copenhagen, Denmark",
-    "experience": "3+ years",
-    "rating": 4.3
-  },
-  {
-    "id": 35,
-    "title": "Rust Developer",
-    "company_name": "SecureRust",
-    "employment_type": "Full-time",
-    "languages": ["Rust", "WASM"],
-    "posted": "2024-07-05",
+    "languages": [
+      "Redux",
+      "React"
+    ],
+    "posted": "14 days ago",
     "location": "Remote",
     "experience": "2+ years",
     "rating": 4.6
   },
   {
-    "id": 36,
-    "title": "Golang Developer",
-    "company_name": "GoSystems",
-    "employment_type": "Full-time",
-    "languages": ["Go", "Microservices"],
-    "posted": "2024-07-06",
-    "location": "Osaka, Japan",
+    "id": 31,
+    "title": "Frontend Developer",
+    "company_name": "InnovateTech",
+    "employment_type": "Part-time",
+    "languages": [
+      "JavaScript",
+      "Redux",
+      "TypeScript",
+      "React"
+    ],
+    "posted": "12 days ago",
+    "location": "Pune",
     "experience": "3+ years",
     "rating": 4.5
   },
   {
-    "id": 37,
-    "title": "Site Reliability Engineer",
-    "company_name": "ScaleOps",
+    "id": 32,
+    "title": "Frontend Developer",
+    "company_name": "AppMinds",
+    "employment_type": "Part-time",
+    "languages": [
+      "Redux",
+      "Tailwind CSS",
+      "HTML"
+    ],
+    "posted": "3 days ago",
+    "location": "Indore",
+    "experience": "0-1 years",
+    "rating": 4.0
+  },
+  {
+    "id": 33,
+    "title": "React.js Developer",
+    "company_name": "DevSolutions",
+    "employment_type": "Part-time",
+    "languages": [
+      "Redux",
+      "CSS"
+    ],
+    "posted": "5 days ago",
+    "location": "Hyderabad",
+    "experience": "5+ years",
+    "rating": 4.1
+  },
+  {
+    "id": 34,
+    "title": "Frontend Developer",
+    "company_name": "DevSolutions",
     "employment_type": "Full-time",
-    "languages": ["Linux", "Kubernetes"],
-    "posted": "2024-07-07",
-    "location": "Seattle, USA",
-    "experience": "4+ years",
+    "languages": [
+      "CSS",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "posted": "4 days ago",
+    "location": "Bengaluru",
+    "experience": "2+ years",
+    "rating": 4.6
+  },
+  {
+    "id": 35,
+    "title": "Full Stack Developer (React)",
+    "company_name": "TechCorp",
+    "employment_type": "Part-time",
+    "languages": [
+      "Next.js",
+      "JavaScript",
+      "React",
+      "CSS"
+    ],
+    "posted": "6 days ago",
+    "location": "Remote",
+    "experience": "3+ years",
+    "rating": 4.7
+  },
+  {
+    "id": 36,
+    "title": "JavaScript Developer",
+    "company_name": "InnovateTech",
+    "employment_type": "Contract",
+    "languages": [
+      "Next.js",
+      "JavaScript"
+    ],
+    "posted": "12 days ago",
+    "location": "Ahmedabad",
+    "experience": "2+ years",
+    "rating": 4.3
+  },
+  {
+    "id": 37,
+    "title": "Frontend Engineer",
+    "company_name": "DevSolutions",
+    "employment_type": "Contract",
+    "languages": [
+      "Redux",
+      "Next.js"
+    ],
+    "posted": "11 days ago",
+    "location": "Bhubaneshwar",
+    "experience": "0-1 years",
     "rating": 4.6
   },
   {
     "id": 38,
-    "title": "Junior Developer",
-    "company_name": "NextGen",
-    "employment_type": "Full-time",
-    "languages": ["JavaScript", "HTML", "CSS"],
-    "posted": "2024-07-08",
-    "location": "Mexico City, Mexico",
-    "experience": "1+ year",
-    "rating": 4.0
+    "title": "React.js Developer",
+    "company_name": "CodeCrafters",
+    "employment_type": "Part-time",
+    "languages": [
+      "HTML",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "posted": "2 days ago",
+    "location": "Remote",
+    "experience": "1+ years",
+    "rating": 4.3
   },
   {
     "id": 39,
-    "title": "Senior Python Developer",
-    "company_name": "PyCore",
-    "employment_type": "Full-time",
-    "languages": ["Python", "Flask", "Django"],
-    "posted": "2024-07-09",
-    "location": "Helsinki, Finland",
-    "experience": "5+ years",
-    "rating": 4.8
+    "title": "Frontend Engineer",
+    "company_name": "InnovateTech",
+    "employment_type": "Contract",
+    "languages": [
+      "React",
+      "Next.js"
+    ],
+    "posted": "13 days ago",
+    "location": "Kolkata",
+    "experience": "0-1 years",
+    "rating": 4.0
   },
   {
     "id": 40,
-    "title": "Web3 Developer",
-    "company_name": "ChainBuilders",
-    "employment_type": "Full-time",
-    "languages": ["Web3.js", "Solidity"],
-    "posted": "2024-07-10",
-    "location": "Tallinn, Estonia",
-    "experience": "3+ years",
-    "rating": 4.4
-  },
-  {
-    "id": 41,
-    "title": "Hardware Engineer",
-    "company_name": "ChipDesigns",
-    "employment_type": "Full-time",
-    "languages": ["VHDL", "Verilog"],
-    "posted": "2024-07-11",
-    "location": "Taipei, Taiwan",
-    "experience": "4+ years",
-    "rating": 4.6
-  },
-  {
-    "id": 42,
-    "title": "Security Engineer",
-    "company_name": "CyberSafe",
-    "employment_type": "Full-time",
-    "languages": ["Python", "Security Auditing"],
-    "posted": "2024-07-12",
-    "location": "Vancouver, Canada",
+    "title": "React Developer",
+    "company_name": "AppMinds",
+    "employment_type": "Part-time",
+    "languages": [
+      "CSS",
+      "Tailwind CSS",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "posted": "7 days ago",
+    "location": "Mumbai",
     "experience": "5+ years",
     "rating": 4.7
   },
   {
-    "id": 43,
-    "title": "PHP Developer",
-    "company_name": "WebWorks",
+    "id": 41,
+    "title": "React Developer",
+    "company_name": "AppMinds",
     "employment_type": "Full-time",
-    "languages": ["PHP", "Laravel"],
-    "posted": "2024-07-13",
-    "location": "Jakarta, Indonesia",
-    "experience": "3+ years",
+    "languages": [
+      "CSS",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "posted": "13 days ago",
+    "location": "Mumbai",
+    "experience": "4+ years",
     "rating": 4.3
   },
   {
-    "id": 44,
-    "title": "Angular Developer",
-    "company_name": "UIXpert",
-    "employment_type": "Full-time",
-    "languages": ["Angular", "TypeScript"],
-    "posted": "2024-07-14",
-    "location": "Bangkok, Thailand",
-    "experience": "2+ years",
-    "rating": 4.2
-  },
-  {
-    "id": 45,
-    "title": "Java Developer",
-    "company_name": "CoreApps",
-    "employment_type": "Full-time",
-    "languages": ["Java", "Spring Boot"],
-    "posted": "2024-07-15",
-    "location": "Kuala Lumpur, Malaysia",
-    "experience": "4+ years",
-    "rating": 4.4
-  },
-  {
-    "id": 46,
-    "title": "iOS Developer",
-    "company_name": "AppStudio",
-    "employment_type": "Full-time",
-    "languages": ["Swift", "Xcode"],
-    "posted": "2024-07-16",
-    "location": "Singapore",
-    "experience": "3+ years",
+    "id": 42,
+    "title": "React.js Developer",
+    "company_name": "DevSolutions",
+    "employment_type": "Part-time",
+    "languages": [
+      "HTML",
+      "TypeScript",
+      "JavaScript",
+      "Redux"
+    ],
+    "posted": "6 days ago",
+    "location": "Bhubaneshwar",
+    "experience": "1+ years",
     "rating": 4.5
   },
   {
-    "id": 47,
-    "title": "Android Developer",
-    "company_name": "MobileStack",
+    "id": 43,
+    "title": "JavaScript Developer",
+    "company_name": "DevSolutions",
+    "employment_type": "Part-time",
+    "languages": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "JavaScript"
+    ],
+    "posted": "11 days ago",
+    "location": "Noida",
+    "experience": "1+ years",
+    "rating": 4.6
+  },
+  {
+    "id": 44,
+    "title": "Web Developer (React)",
+    "company_name": "AppMinds",
+    "employment_type": "Part-time",
+    "languages": [
+      "Redux",
+      "HTML",
+      "CSS",
+      "React"
+    ],
+    "posted": "10 days ago",
+    "location": "Pune",
+    "experience": "0-1 years",
+    "rating": 4.7
+  },
+  {
+    "id": 45,
+    "title": "React.js Developer",
+    "company_name": "CodeCrafters",
+    "employment_type": "Part-time",
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "CSS",
+      "Redux"
+    ],
+    "posted": "4 days ago",
+    "location": "Indore",
+    "experience": "0-1 years",
+    "rating": 4.0
+  },
+  {
+    "id": 46,
+    "title": "React Engineer",
+    "company_name": "SoftServe",
     "employment_type": "Full-time",
-    "languages": ["Kotlin", "Jetpack"],
-    "posted": "2024-07-17",
-    "location": "Buenos Aires, Argentina",
-    "experience": "3+ years",
+    "languages": [
+      "Tailwind CSS",
+      "Next.js",
+      "Redux",
+      "HTML"
+    ],
+    "posted": "4 days ago",
+    "location": "Ahmedabad",
+    "experience": "4+ years",
+    "rating": 4.7
+  },
+  {
+    "id": 47,
+    "title": "JavaScript Developer",
+    "company_name": "AppMinds",
+    "employment_type": "Part-time",
+    "languages": [
+      "TypeScript",
+      "Next.js",
+      "CSS"
+    ],
+    "posted": "8 days ago",
+    "location": "Indore",
+    "experience": "0-1 years",
     "rating": 4.3
   },
   {
     "id": 48,
-    "title": "SEO Specialist",
-    "company_name": "RankWise",
-    "employment_type": "Contract",
-    "languages": ["SEO", "Google Search Console"],
-    "posted": "2024-07-18",
+    "title": "Web Developer (React)",
+    "company_name": "DevSolutions",
+    "employment_type": "Full-time",
+    "languages": [
+      "Redux",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "posted": "13 days ago",
     "location": "Remote",
-    "experience": "2+ years",
-    "rating": 4.1
+    "experience": "0-1 years",
+    "rating": 4.7
   },
   {
     "id": 49,
-    "title": "Technical Recruiter",
-    "company_name": "HireTalent",
+    "title": "JavaScript Developer",
+    "company_name": "InnovateTech",
     "employment_type": "Full-time",
-    "languages": ["LinkedIn", "ATS"],
-    "posted": "2024-07-19",
-    "location": "Boston, USA",
+    "languages": [
+      "Tailwind CSS",
+      "CSS"
+    ],
+    "posted": "13 days ago",
+    "location": "Pune",
     "experience": "2+ years",
-    "rating": 4.0
+    "rating": 4.6
   },
   {
     "id": 50,
-    "title": "Graphic Designer",
-    "company_name": "Creativo",
-    "employment_type": "Part-time",
-    "languages": ["Photoshop", "Illustrator"],
-    "posted": "2024-07-20",
-    "location": "Barcelona, Spain",
+    "title": "JavaScript Developer",
+    "company_name": "CodeCrafters",
+    "employment_type": "Contract",
+    "languages": [
+      "React",
+      "JavaScript",
+      "Next.js"
+    ],
+    "posted": "2 days ago",
+    "location": "Remote",
     "experience": "3+ years",
-    "rating": 4.2
+    "rating": 4.6
   }
 ]
-
-  
