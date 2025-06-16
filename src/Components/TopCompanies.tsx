@@ -114,6 +114,7 @@ const TopCompanies = () => {
   return (
     <div className="top-companies-wrapper">
       <h2>Top Companies Hiring Now</h2>
+      <p>Ka ho</p>
       <p className="subtext">Explore hundreds of opportunities crafted for you</p>
       <div className="controls">
         <FaChevronLeft onClick={() => scroll('left')} className="arrow" />
