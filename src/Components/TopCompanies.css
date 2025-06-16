@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 .top-companies-wrapper {
   text-align: center;
-  padding: 40px 0;
+  padding: 30px 0;
   font-family: "Poppins", sans-serif;
 }
 
 .top-companies-wrapper h2 {
   transition: all 0.3s ease;
   display: inline-block;
-  font-size: 28px;
+  font-size: 40px;
   color: #2563eb;
+  margin-bottom: 5px;
 }
 
 .top-companies-wrapper h2:hover {
   color: #2563eb;
   transform: scale(1.1);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -39,6 +40,7 @@
   gap: 20px;
   padding: 10px 0;
   scrollbar-width: none; /* Firefox */
+  margin-top: 15px;
 }
 
 .companies-carousel::-webkit-scrollbar {
@@ -52,7 +54,7 @@
   border-radius: 8px;
   width: 180px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .company-logo {
@@ -81,7 +83,7 @@
 }
 
 .subtext {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #434547;
-  margin-top: .5px;
+  margin-top: 0;
 }

@@ -1,41 +1,81 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 .job-card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   font-family: "Poppins", sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
-}
-.company {
-  display: inline-block;
-  /* font-weight: bold; */
-  padding: 2px 6px;
-  margin: 4px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background-color: rgba(0, 123, 255, 0.1);
-  color: #333;
-  font-size: 14px;
+  align-items: flex-start;
 }
 
-.meta span { 
-  margin-right: 12px; 
-  color: #b9b8b8; 
-  font-size: 14px; 
+.card-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
 }
-.posted { 
-  color: #a19f9f; 
-  font-size: 14px; 
+
+.company {
+  display: inline-block;
+  font-weight: 600;
+  padding: 4px 10px;
+  margin: 6px 0;
+  border-radius: 12px;
+  background: #e6f0ff;
+  color: #1a73e8;
+  font-size: 14px;
+  border: none;
 }
-.skills, .employment { 
-  color: #333; font-size: 15px; 
+
+.meta {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.posted {
+  color: #999;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.skills,
+.employment {
+  font-size: 15px;
+  color: #333;
+}
+
+.skills {
+  margin-top: 4px;
+  font-weight: 500;
+  color: #444;
+}
+
+.employment {
+  font-style: italic;
+  color: #5f6368;
 }
