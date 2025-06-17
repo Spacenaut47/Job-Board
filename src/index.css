@@ -71,6 +71,13 @@ body.dark .job-card .employment{
   color: #f0ecec;
 }
 
+body.dark .job-card .meta{
+  color: #cecdcd;
+}
+body.light .job-card .meta{
+  color: #6c757d;
+}
+
 body.dark .top-companies-wrapper .subtext{
   color: #f0ecec;
 }

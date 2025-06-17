@@ -28,7 +28,7 @@
   font-size: 20px;
   font-weight: 600;
   margin: 0;
-  color: #333;
+  /* color: #333; */
 }
 
 .company {
@@ -48,7 +48,7 @@
   gap: 12px;
   margin-top: 4px;
   font-size: 14px;
-  color: #6c757d;
+  /* color: #6c757d; */
 }
 
 .meta span {
