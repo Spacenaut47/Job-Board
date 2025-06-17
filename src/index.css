@@ -6,11 +6,12 @@
   --card-bg-light: #ffffff;
   --topbar-bg: #fef7f7;
   /* --bg-dark: #1f2937; */
-  /* --bg-dark: #464646; */
+  --bg-dark: #464646;
   --text-dark: #f9fafb;
   /* --card-bg-dark: #374151; */
-   --bg-dark: linear-gradient(to bottom, #2d2d2d 25%, #2a2a2a 45%, #686868 70%);
-  --card-bg-dark: #686868;
+   /* --bg-dark: linear-gradient(to bottom, #2d2d2d 25%, #2a2a2a 45%, #686868 70%); */
+  /* --card-bg-dark: #686868; */
+   --card-bg-dark: linear-gradient(to bottom right, #2d2d2d 25%, #2a2a2a 45%, #686868 90%);
 }
 
 body {
@@ -38,7 +39,7 @@ body.light .company-card {
 
 body.dark .job-card,
 body.dark .company-card {
-  background-color: var(--card-bg-dark);
+  background: var(--card-bg-dark);
   color: var(--text-dark);
 }
 
