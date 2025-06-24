@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import api from '../api/axios';
 
 export interface Job {
   id: number;
@@ -18,19 +18,19 @@ export const useJobs = () => {
   const [filteredJobs, setFilteredJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  const [filtered, setFiltered] = useState(false); // NEW
+  const [filtered, setFiltered] = useState(false);
 
   const jobsPerPage = 6;
 
   useEffect(() => {
-    axios.get('./jobs.json')
+    api.get('/jobs')
       .then(res => {
         setJobs(res.data);
         setFilteredJobs(res.data);
         setLoading(false);
       })
       .catch(err => {
-        console.error(err);
+        console.error('Failed to fetch jobs:', err);
         setLoading(false);
       });
   }, []);
@@ -45,8 +45,8 @@ export const useJobs = () => {
       job.languages.some(lang => lang.toLowerCase().includes(lower))
     );
     setFilteredJobs(results);
-    setPage(1); // Reset to first page after filtering
-    setFiltered(!!query); // Track if filtering is active
+    setPage(1);
+    setFiltered(!!query);
   };
 
   const totalPages = Math.ceil(filteredJobs.length / jobsPerPage);
@@ -54,8 +54,8 @@ export const useJobs = () => {
 
   return {
     jobs: currentJobs,
-    allFiltered: filteredJobs, // full filtered results
-    filtered,                  // whether filter is active
+    allFiltered: filteredJobs,
+    filtered,
     loading,
     filterJobs,
     page,
