@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5222/api', // ✅ Match your backend
+  baseURL: 'http://localhost:5222/api',
+   headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 // 🔐 Automatically attach token from localStorage to every request

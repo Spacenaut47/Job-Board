@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import JobCard from '../Components/JobCard';
 import SearchBar from '../Components/SearchBar';
 import ThemeToggle from '../Components/ThemeToggle';
@@ -32,6 +33,12 @@ const Home = () => {
         </div>
         <div className="nav-right">
           <ThemeToggle />
+          <Link to="/login">
+            <button className="auth-btn">Login</button>
+          </Link>
+          <Link to="/register">
+            <button className="auth-btn">Register</button>
+          </Link>
         </div>
       </div>
 
