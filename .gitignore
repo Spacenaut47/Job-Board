@@ -16,28 +16,33 @@ yarn-error.log*
 build/
 coverage/
 
-# macOS / Windows
-.DS_Store
-Thumbs.db
+# OS-specific files
+.DS_Store         # macOS
+Thumbs.db         # Windows
 
-# SQLite DB
+# Database files (e.g., SQLite, other .db formats)
 *.db
 *.db-journal
+*.db-*
 *.pdb
 
-# VSCode
+# Ignore DLLs
+*.dll
+
+# Visual Studio Code
 .vscode/
 
-# .NET
+# .NET Core build artifacts
 bin/
 obj/
 *.user
 *.suo
 
-# Rider / JetBrains
+# JetBrains Rider / IntelliJ
 .idea/
 
-# Publish folder
+# Static publish folder (e.g., for Blazor, MVC)
 wwwroot/
 
-.fake
+# Temporary and fake folders
+.fake/
