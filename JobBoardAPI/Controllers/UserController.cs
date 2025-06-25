@@ -2,7 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using JobBoardAPI.Data;
 using JobBoardAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using JobBoardAPI.Services;
 using BCrypt.Net;
+
 
 namespace JobBoardAPI.Controllers
 {
@@ -11,10 +13,12 @@ namespace JobBoardAPI.Controllers
     public class UserController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly TokenService _tokenService;
 
-        public UserController(AppDbContext context)
+        public UserController(AppDbContext context, TokenService tokenService)
         {
             _context = context;
+            _tokenService = tokenService;
         }
 
         [HttpPost("register")]
@@ -37,7 +41,16 @@ namespace JobBoardAPI.Controllers
             if (user == null || !BCrypt.Net.BCrypt.Verify(login.Password, user.PasswordHash))
                 return Unauthorized("Invalid credentials");
 
-            return Ok(new { message = "Login successful", username = user.Name, company = "tcs"});
+            var token = _tokenService.CreateToken(user);
+
+            return Ok(new
+            {
+                token,
+                username = user.Name,
+                email = user.Email,
+                isAdmin = false // You can later update this if you add roles
+            });
         }
+
     }
 }
