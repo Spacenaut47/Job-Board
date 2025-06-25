@@ -23,6 +23,7 @@ Thumbs.db
 # SQLite DB
 *.db
 *.db-journal
+*.pdb
 
 # VSCode
 .vscode/
@@ -38,3 +39,5 @@ obj/
 
 # Publish folder
 wwwroot/
+
+.fake
