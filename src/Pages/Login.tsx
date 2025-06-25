@@ -15,9 +15,8 @@ const Login = () => {
       });
 
       if (response.status === 200) {
-        const data = response;
-        console.log(data);
-        localStorage.setItem("token", data.token); 
+        const token = response.data.token;
+        localStorage.setItem("token", token); 
         alert("Login successful!");
         navigate("/");
       }

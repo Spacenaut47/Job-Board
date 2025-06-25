@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import api from '../api/axios';
+import { useEffect, useState } from "react";
+import api from "../api/axios";
 
 export interface Job {
   id: number;
@@ -23,26 +23,34 @@ export const useJobs = () => {
   const jobsPerPage = 6;
 
   useEffect(() => {
-    api.get('/jobs')
-      .then(res => {
+    const token = localStorage.getItem("token");
+
+    api
+      .get("/jobs", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((res) => {
         setJobs(res.data);
         setFilteredJobs(res.data);
         setLoading(false);
       })
-      .catch(err => {
-        console.error('Failed to fetch jobs:', err);
+      .catch((err) => {
+        console.error("Failed to fetch jobs:", err);
         setLoading(false);
       });
   }, []);
 
   const filterJobs = (query: string) => {
     const lower = query.toLowerCase();
-    const results = jobs.filter(job =>
-      job.title.toLowerCase().includes(lower) ||
-      job.company_name.toLowerCase().includes(lower) ||
-      job.location.toLowerCase().includes(lower) ||
-      job.employment_type.toLowerCase().includes(lower) ||
-      job.languages.some(lang => lang.toLowerCase().includes(lower))
+    const results = jobs.filter(
+      (job) =>
+        job.title.toLowerCase().includes(lower) ||
+        job.company_name.toLowerCase().includes(lower) ||
+        job.location.toLowerCase().includes(lower) ||
+        job.employment_type.toLowerCase().includes(lower) ||
+        job.languages.some((lang) => lang.toLowerCase().includes(lower))
     );
     setFilteredJobs(results);
     setPage(1);
@@ -50,7 +58,10 @@ export const useJobs = () => {
   };
 
   const totalPages = Math.ceil(filteredJobs.length / jobsPerPage);
-  const currentJobs = filteredJobs.slice((page - 1) * jobsPerPage, page * jobsPerPage);
+  const currentJobs = filteredJobs.slice(
+    (page - 1) * jobsPerPage,
+    page * jobsPerPage
+  );
 
   return {
     jobs: currentJobs,
@@ -60,7 +71,7 @@ export const useJobs = () => {
     filterJobs,
     page,
     totalPages,
-    nextPage: () => setPage(p => Math.min(p + 1, totalPages)),
-    prevPage: () => setPage(p => Math.max(p - 1, 1)),
+    nextPage: () => setPage((p) => Math.min(p + 1, totalPages)),
+    prevPage: () => setPage((p) => Math.max(p - 1, 1)),
   };
 };
