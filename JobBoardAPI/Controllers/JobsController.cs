@@ -17,6 +17,7 @@ public class JobsController : ControllerBase
         _context = context;
     }
 
+    [AllowAnonymous]
     [HttpGet]
     public IActionResult GetAllJobs()
     {
