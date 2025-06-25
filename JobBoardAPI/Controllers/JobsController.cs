@@ -26,10 +26,23 @@ public class JobsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "AdminOnly")]
     public IActionResult AddJob(Job job)
     {
         _context.Jobs.Add(job);
         _context.SaveChanges();
         return CreatedAtAction(nameof(GetAllJobs), new { id = job.Id }, job);
+    }
+
+    [HttpDelete("{id}")]
+    [Authorize(Policy = "AdminOnly")]
+    public IActionResult DeleteJob(int id)
+    {
+        var job = _context.Jobs.Find(id);
+        if (job == null) return NotFound();
+
+        _context.Jobs.Remove(job);
+        _context.SaveChanges();
+        return NoContent();
     }
 }

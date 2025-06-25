@@ -48,7 +48,7 @@ namespace JobBoardAPI.Controllers
                 token,
                 username = user.Name,
                 email = user.Email,
-                isAdmin = false // You can later update this if you add roles
+                isAdmin = user.IsAdmin // You can later update this if you add roles
             });
         }
 
