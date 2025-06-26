@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import AdminDashboard from "./Pages/AdminDashboard";
 import AddJobForm from "./Pages/AddJobForm";
 import EditJobForm from "./Pages/EditJobForm";
+import JobApplicantsPage from "./Pages/JobApplicantsPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/unauthorized" element={<p>Unauthorized</p>} />
           <Route path="/admin/add-job" element={<AddJobForm />} />
           <Route path="/admin/edit-job/:id" element={<EditJobForm />} />
+          <Route path="/admin/job/:jobId/applicants" element={<JobApplicantsPage />} />
         </Routes>
       </Router>
     </ThemeProvider>

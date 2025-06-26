@@ -95,7 +95,7 @@ const AdminDashboard = () => {
               {jobs.map((job) => (
                 <li key={job.id} style={{ marginBottom: "1rem" }}>
                   <strong>{job.title}</strong> — {job.company_name}
-
+                  {/* Delete Button */}
                   <button
                     onClick={() => handleDelete(job.id)}
                     style={{
@@ -110,7 +110,7 @@ const AdminDashboard = () => {
                   >
                     Delete
                   </button>
-
+                  {/* Edit Button */}
                   <button
                     onClick={() => navigate(`/admin/edit-job/${job.id}`)}
                     style={{
@@ -124,6 +124,21 @@ const AdminDashboard = () => {
                     }}
                   >
                     Edit
+                  </button>
+                  {/* ✅ View Applicants Button */}
+                  <button
+                    onClick={() => navigate(`/admin/job/${job.id}/applicants`)}
+                    style={{
+                      marginLeft: "1rem",
+                      padding: "0.4rem 0.8rem",
+                      backgroundColor: "#333",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: "5px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    View Applicants
                   </button>
                 </li>
               ))}
