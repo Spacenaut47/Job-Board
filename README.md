@@ -1,7 +1,7 @@
 📘 Job Board API Documentation
 
 🛠 Tech Stack
-*Backend: ASP.NET Core 9 Web API
+- Backend: ASP.NET Core 9 Web API
 *Frontend: React + TypeScript
 *Database: SQLite (via EF Core)
 *Authentication: JWT + BCrypt
