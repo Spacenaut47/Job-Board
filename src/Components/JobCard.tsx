@@ -1,20 +1,27 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import API from '../api/axios';
 import './JobCard.css';
 import { FaMapMarkerAlt, FaUserTie } from 'react-icons/fa';
 import type { Job } from '../Hook/useJob';
-import { useState } from 'react';
-import API from '../api/axios';
 
 const JobCard = ({ job }: { job: Job }) => {
   const [showForm, setShowForm] = useState(false);
   const [message, setMessage] = useState('');
+  const navigate = useNavigate(); 
+
+  const token = localStorage.getItem('token');
+  const isAdmin = localStorage.getItem('isAdmin') === 'true';
+
+  const handleApplyClick = () => {
+    if (!token) {
+      navigate('/login'); 
+    } else {
+      setShowForm(true); 
+    }
+  };
 
   const handleApply = async () => {
-    const token = localStorage.getItem('token');
-    if (!token) {
-      alert('Please login to apply');
-      return;
-    }
-
     try {
       await API.post(`/jobapplications/${job.id}`, message, {
         headers: {
@@ -32,8 +39,6 @@ const JobCard = ({ job }: { job: Job }) => {
     }
   };
 
-  const isAdmin = localStorage.getItem('isAdmin') === 'true';
-
   return (
     <div className="job-card">
       <div className="card-header">
@@ -50,13 +55,13 @@ const JobCard = ({ job }: { job: Job }) => {
       <p className="skills">Skills: {job.languages.join(', ')}</p>
       <p className="employment">{job.employment_type}</p>
 
-      {!isAdmin && localStorage.getItem('token') && (
+      {!isAdmin && (
         <>
-          <button onClick={() => setShowForm(!showForm)} className="auth-btn">
-            {showForm ? 'Cancel' : 'Apply'}
+          <button onClick={handleApplyClick} className="auth-btn">
+            Apply
           </button>
 
-          {showForm && (
+          {showForm && token && (
             <div style={{ marginTop: '1rem' }}>
               <textarea
                 placeholder="Your message to the recruiter"
@@ -66,6 +71,7 @@ const JobCard = ({ job }: { job: Job }) => {
                 style={{ width: '100%', marginBottom: '0.5rem' }}
               />
               <button onClick={handleApply} className="auth-btn">Submit</button>
+              <button onClick={() => setShowForm(false)} className="auth-btn">Cancel</button>
             </div>
           )}
         </>
