@@ -45,7 +45,7 @@ const Home = () => {
                 className="auth-btn"
                 onClick={() => {
                   localStorage.clear();
-                  window.location.reload(); // OR use navigate("/login")
+                  window.location.reload();
                 }}
               >
                 Logout

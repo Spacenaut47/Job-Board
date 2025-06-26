@@ -45,4 +45,25 @@ public class JobsController : ControllerBase
         _context.SaveChanges();
         return NoContent();
     }
+
+    [HttpPut("{id}")]
+    [Authorize(Policy = "AdminOnly")]
+    public IActionResult UpdateJob(int id, [FromBody] Job updatedJob)
+    {
+        var job = _context.Jobs.Find(id);
+        if (job == null) return NotFound();
+
+        job.Title = updatedJob.Title;
+        job.CompanyName = updatedJob.CompanyName;
+        job.EmploymentType = updatedJob.EmploymentType;
+        job.Languages = updatedJob.Languages;
+        job.Posted = updatedJob.Posted;
+        job.Location = updatedJob.Location;
+        job.Experience = updatedJob.Experience;
+        job.Rating = updatedJob.Rating;
+
+        _context.SaveChanges();
+        return Ok(job);
+    }
+
 }

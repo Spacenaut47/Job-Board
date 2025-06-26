@@ -54,6 +54,22 @@ const AdminDashboard = () => {
       <h2>Admin Dashboard</h2>
 
       <button
+        onClick={() => navigate("/")}
+        style={{
+          marginBottom: "1rem",
+          marginRight: "1rem",
+          padding: "0.5rem 1rem",
+          backgroundColor: "#6c757d",
+          color: "#fff",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}
+      >
+        Home
+      </button>
+
+      <button
         onClick={() => navigate("/admin/add-job")}
         style={{
           marginBottom: "1rem",
@@ -79,6 +95,7 @@ const AdminDashboard = () => {
               {jobs.map((job) => (
                 <li key={job.id} style={{ marginBottom: "1rem" }}>
                   <strong>{job.title}</strong> — {job.company_name}
+
                   <button
                     onClick={() => handleDelete(job.id)}
                     style={{
@@ -92,6 +109,21 @@ const AdminDashboard = () => {
                     }}
                   >
                     Delete
+                  </button>
+
+                  <button
+                    onClick={() => navigate(`/admin/edit-job/${job.id}`)}
+                    style={{
+                      marginLeft: "1rem",
+                      padding: "0.4rem 0.8rem",
+                      backgroundColor: "#4CAF50",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: "5px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Edit
                   </button>
                 </li>
               ))}
