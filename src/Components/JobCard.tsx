@@ -22,22 +22,33 @@ const JobCard = ({ job }: { job: Job }) => {
   };
 
   const handleApply = async () => {
-    try {
-      await API.post(`/jobapplications/${job.id}`, message, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        },
-      });
+  try {
+    await API.post(`/jobapplications/${job.id}`, message, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    });
 
-      alert('Application submitted!');
-      setShowForm(false);
-      setMessage('');
-    } catch (err) {
-      console.error(err);
-      alert('Application failed');
+    alert('Application submitted!');
+    setShowForm(false);
+    setMessage('');
+  } catch (err: any) {
+    console.error(err);
+
+    if (err.response && err.response.status === 400) {
+      const serverMessage = err.response.data;
+      if (typeof serverMessage === 'string' && serverMessage.includes('already applied')) {
+        alert('You have already applied to this job.');
+      } else {
+        alert(serverMessage);
+      }
+    } else {
+      alert('Application failed. Please try again.');
     }
-  };
+  }
+};
+
 
   return (
     <div className="job-card">
