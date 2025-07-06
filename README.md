@@ -1,54 +1,75 @@
-# React + TypeScript + Vite
+📘 Job Board API Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠 Tech Stack
+- Backend: ASP.NET Core 9 Web API
+- Frontend: React + TypeScript
+- Database: SQLite (via EF Core)
+- Authentication: JWT + BCrypt
+- Role Management: Admin vs Regular Users
 
-Currently, two official plugins are available:
+✅ Prerequisites
+- NET 9 SDK
+- Node.js + npm (for frontend)
+- SQLite (installed or use DB Browser)
+- Visual Studio / VS Code
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+🧪 Running the Backend
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+# From the root project folder
+dotnet restore
+dotnet ef database update
+dotnet run
 ```
+📦 Packages Used
+```
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet add package BCrypt.Net-Next
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+```
+🧬 Entity Models
+User
+```
+public class User {
+  int Id;
+  string Name;
+  string Email;
+  string PasswordHash;
+  bool IsAdmin;
+}
+```
+Job
+```
+public class Job {
+  int Id;
+  string Title;
+  string CompanyName;
+  string EmploymentType;
+  string[] Languages;
+  string Posted;
+  string Location;
+  string Experience;
+  float Rating;
+}
+```
+🔐 Authentication
+- Login returns a JWT token + isAdmin flag
+- Save token in localStorage and use in Authorization header
+
+👨‍💼 Admin Dashboard
+Features:
+- View all jobs
+- Delete jobs
+- Add new job
+- Edit job (coming soon)
+Access:
+- Only available if isAdmin === true
+- Route: /admin
+- Protected via localStorage.getItem("isAdmin")
+
+🖥 Frontend Highlights
+Role-based UI:
+- Admin sees "Admin Panel"
+- Users only see public pages
+- Token saved in localStorage
+- Admin-only routes protected

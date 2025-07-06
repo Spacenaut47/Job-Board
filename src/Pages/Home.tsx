@@ -1,10 +1,11 @@
-import JobCard from '../Components/JobCard';
-import SearchBar from '../Components/SearchBar';
-import ThemeToggle from '../Components/ThemeToggle';
-import TopCompanies from '../Components/TopCompanies';
-import { useJobs } from '../Hook/useJob';
-import './Home.css';
-import logo from './logo.png'
+import { Link } from "react-router-dom";
+import JobCard from "../Components/JobCard";
+import SearchBar from "../Components/SearchBar";
+import ThemeToggle from "../Components/ThemeToggle";
+import TopCompanies from "../Components/TopCompanies";
+import { useJobs } from "../Hook/useJob";
+import "./Home.css";
+import logo from "./logo.png";
 
 const Home = () => {
   const {
@@ -16,7 +17,7 @@ const Home = () => {
     nextPage,
     prevPage,
     page,
-    totalPages
+    totalPages,
   } = useJobs();
 
   if (loading) return <p>Loading jobs...</p>;
@@ -32,6 +33,34 @@ const Home = () => {
         </div>
         <div className="nav-right">
           <ThemeToggle />
+
+          {localStorage.getItem("token") ? (
+            <>
+              {localStorage.getItem("isAdmin") === "true" && (
+                <Link to="/admin">
+                  <button className="auth-btn">Admin Panel</button>
+                </Link>
+              )}
+              <button
+                className="auth-btn"
+                onClick={() => {
+                  localStorage.clear();
+                  window.location.reload();
+                }}
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <button className="auth-btn">Login</button>
+              </Link>
+              <Link to="/register">
+                <button className="auth-btn">Register</button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
 
@@ -39,9 +68,15 @@ const Home = () => {
         {filtered && (
           <div className="search-section">
             <h2>Search Result</h2>
-            {allFiltered.length === 0
-              ? <p>No matched found</p>
-              : <div className="home">{jobs.map(job => <JobCard key={job.id} job={job} />)}</div>}
+            {allFiltered.length === 0 ? (
+              <p>No matched found</p>
+            ) : (
+              <div className="home">
+                {jobs.map((job) => (
+                  <JobCard key={job.id} job={job} />
+                ))}
+              </div>
+            )}
           </div>
         )}
         <TopCompanies />
@@ -52,9 +87,15 @@ const Home = () => {
           ))}
         </div>
         <div className="pagination">
-          <button disabled={page === 1} onClick={prevPage}>Previous</button>
-          <span>Page {page} of {totalPages}</span>
-          <button disabled={page === totalPages} onClick={nextPage}>Next</button>
+          <button disabled={page === 1} onClick={prevPage}>
+            Previous
+          </button>
+          <span>
+            Page {page} of {totalPages}
+          </span>
+          <button disabled={page === totalPages} onClick={nextPage}>
+            Next
+          </button>
         </div>
       </div>
     </>
