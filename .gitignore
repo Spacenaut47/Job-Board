@@ -25,6 +25,7 @@ Thumbs.db         # Windows
 *.db-journal
 *.db-*
 *.pdb
+Migrations/
 
 # Ignore DLLs
 *.dll
